@@ -1,0 +1,130 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="icons/bootstrap-icons.min.css" rel="stylesheet" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .sidebar-container {
+            min-height: 100vh;
+            background-color: #212529;
+        }
+        .nav-content {
+            padding: 1rem;
+        }
+        .nav-link-item {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        .nav-link-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .nav-link-item i {
+            margin-right: 0.5rem;
+        }
+        .contacts-column {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .main-content {
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 8rem);
+        }
+        .content-container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        .align-columns {
+            display: flex;
+            align-items: center;
+        }
+        .form-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .submit-btn {
+            margin-top: 1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="d-flex">
+<div class="container-fluid g-0 h-100">
+    <div class="row g-0 h-100">
+        <div class="col-md-2 sidebar-container">
+            <div class="nav-content">
+                <a class="d-block mb-3 text-white text-decoration-none">
+                    <i class="bi bi-bootstrap"></i>
+                    <span class="ms-2">Меню</span>
+                </a>
+                <hr class="my-2 text-white-50">
+                <a href="index.html" class="nav-link-item">
+                    <i class="bi bi-house-door"></i>
+                    <span>Главная</span>
+                </a>
+                <a href="categories.html" class="nav-link-item">
+                    <i class="bi bi-stack"></i>
+                    <span>Категории</span>
+                </a>
+                <a href="#" class="nav-link-item">
+                    <i class="bi bi-table"></i>
+                    <span>Заказы</span>
+                </a>
+                <a href="contacts.html" class="nav-link-item">
+                    <i class="bi bi-people"></i>
+                    <span>Контакты</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-10 p-5">
+            <div class="main-content">
+                <div class="content-container">
+                    <div class="row justify-content-center align-columns">
+                        <div class="col-md-5 form-column">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput2" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <i class="bi bi-send"></i> Отправить
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="contacts-column">
+                                <h4>Наши контакты</h4>
+                                <p><i class="bi bi-geo-alt"></i> Адрес: г. Москва, ул. Примерная, 123</p>
+                                <p><i class="bi bi-telephone"></i> Телефон: +7 (123) 456-78-90</p>
+                                <p><i class="bi bi-envelope"></i> Email: info@example.com</p>
+                                <p><i class="bi bi-clock"></i> Время работы: Пн-Пт 9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
