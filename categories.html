@@ -1,0 +1,158 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="icons/bootstrap-icons.min.css" rel="stylesheet" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .sidebar-container {
+            min-height: 100vh;
+            background-color: #212529;
+        }
+        .nav-content {
+            padding: 1rem;
+        }
+        .nav-link-item {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        .nav-link-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .nav-link-item i {
+            margin-right: 0.5rem;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="d-flex">
+<div class="container-fluid g-0 h-100">
+    <div class="row g-0 h-100">
+        <div class="col-md-2 sidebar-container">
+            <div class="nav-content">
+                <a class="d-block mb-3 text-white text-decoration-none">
+                    <i class="bi bi-bootstrap"></i>
+                    <span class="ms-2">Меню</span>
+                </a>
+                <hr class="my-2 text-white-50">
+                <a href="index.html" class="nav-link-item">
+                    <i class="bi bi-house-door"></i>
+                    <span>Главная</span>
+                </a>
+                <a href="catalog.html" class="nav-link-item">
+                    <i class="bi bi-stack"></i>
+                    <span>Категории</span>
+                </a>
+                <a href="categories.html" class="nav-link-item">
+                    <i class="bi bi-table"></i>
+                    <span>Заказы</span>
+                </a>
+                <a href="contacts.html" class="nav-link-item">
+                    <i class="bi bi-people"></i>
+                    <span>Контакты</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-10 pt-5 px-4 pb-4">
+            <div class="text-center mb-4">
+                <h2>Категория 1</h2>
+            </div>
+            <div class="row centered-cards"> <!-- Добавляем класс centered-cards -->
+                <div class="col-md-4 mb-4 d-flex justify-content-center"> <!-- Добавляем d-flex justify-content-center -->
+                    <div class="card" style="max-width: 250px;">
+                        <h5 class="card-header text-center">Товар 1</h5>
+                        <div class="card-body">
+                            <h2 class="card-title text-center">$ 100</h2>
+                            <p class="card-text small">10 users included, 2 GB storage, Email support, Help center access</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center"> <!-- Добавляем d-flex justify-content-center -->
+                    <div class="card" style="max-width: 250px;">
+                        <h5 class="card-header text-center">Товар 2</h5>
+                        <div class="card-body">
+                            <h2 class="card-title text-center">$ 100</h2>
+                            <p class="card-text small">10 users included, 2 GB storage, Email support, Help center access</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center"> <!-- Добавляем d-flex justify-content-center -->
+                    <div class="card" style="max-width: 250px;">
+                        <h5 class="card-header text-center">Товар 3</h5>
+                        <div class="card-body">
+                            <h2 class="card-title text-center">$ 100</h2>
+                            <p class="card-text small">10 users included, 2 GB storage, Email support, Help center access</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row centered-cards"> <!-- Добавляем класс centered-cards -->
+                <div class="col-md-4 mb-4 d-flex justify-content-center"> <!-- Добавляем d-flex justify-content-center -->
+                    <div class="card" style="max-width: 250px;">
+                        <h5 class="card-header text-center">Товар 4</h5>
+                        <div class="card-body">
+                            <h2 class="card-title text-center">$ 100</h2>
+                            <p class="card-text small">10 users included, 2 GB storage, Email support, Help center access</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center"> <!-- Добавляем d-flex justify-content-center -->
+                    <div class="card" style="max-width: 250px;">
+                        <h5 class="card-header text-center">Товар 5</h5>
+                        <div class="card-body">
+                            <h2 class="card-title text-center">$ 100</h2>
+                            <p class="card-text small">10 users included, 2 GB storage, Email support, Help center access</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center"> <!-- Добавляем d-flex justify-content-center -->
+                    <div class="card" style="max-width: 250px;">
+                        <h5 class="card-header text-center">Товар 6</h5>
+                        <div class="card-body">
+                            <h2 class="card-title text-center">$ 100</h2>
+                            <p class="card-text small">10 users included, 2 GB storage, Email support, Help center access</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
